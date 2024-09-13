@@ -9,7 +9,7 @@ COPY pom.xml ./
 COPY src ./src/
 
 # Executar o build do projeto Quarkus
-RUN ./mvnw package -Dquarkus.package.type=fast-jar
+RUN mvn package -Dquarkus.package.type=fast-jar
 
 # Etapa de execução: Utilizar uma imagem base com JDK 21 para rodar a aplicação
 FROM registry.access.redhat.com/ubi9/openjdk-21:latest

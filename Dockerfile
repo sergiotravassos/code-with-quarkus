@@ -1,5 +1,5 @@
 # Etapa de build: Utilizar uma imagem base com Maven e JDK 21 para construir o projeto
-FROM maven:3.9.3-eclipse-temurin-21 AS build
+FROM maven:3.9.3-eclipse-temurin-21-alpine AS build
 
 # Define o diretório de trabalho dentro do container
 WORKDIR /workspace

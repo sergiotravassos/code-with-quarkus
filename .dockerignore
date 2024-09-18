@@ -1,0 +1,40 @@
+# Ignorar diretórios de build do Maven ou Gradle
+target/
+build/
+
+# Ignorar diretórios temporários específicos do Quarkus
+.quarkus/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar configurações do editor e IDEs
+*.swp
+*.iml
+*.ipr
+*.iws
+.idea/
+*.classpath
+*.project
+*.settings/
+.vscode/
+
+# Ignorar arquivos gerados pelo sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de controle de versão (Git)
+.git
+.gitignore
+.gitattributes
+
+# Ignorar artefatos e dependências baixadas
+.mvn/
+.gradle/
+*.jar
+*.war
+*.ear
+
+# Ignorar arquivos de configuração local do Quarkus dev services
+dev_services/
+

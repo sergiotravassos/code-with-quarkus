@@ -85,6 +85,8 @@ WORKDIR /deployments
 
 RUN mkdir -p /deployments/quarkus
 
+RUN ls -la /deployments/quarkus/
+
 # We make four distinct layers so if there are application changes the library layers can be re-used
 COPY target/quarkus-app/lib/ /deployments/lib/
 COPY target/quarkus-app/*.jar /deployments/
